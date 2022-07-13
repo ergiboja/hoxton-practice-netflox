@@ -1,0 +1,88 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.body{
+  display: grid;
+  grid-template: 
+  'header'30vh
+  'main'70vh/
+  100% ;
+  
+
+}
+#header{
+  grid-area: header;
+  height: 75px;
+  background: rgb(37, 38, 39);
+}
+#header h1{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 70px;
+  padding-left: 3%;
+}
+.img{
+  width: 100%;
+  height: 300px;
+  
+}
+.p{
+  font-size: 40px;
+  color: aliceblue;
+
+}
+.main{
+  grid-area: main;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  padding-top:4%;
+  background: rgb(37, 38, 39);
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template: 
+  'm1 m2'40vh
+  'm3 m4'40vh/
+  40% 40%;
+  
+}
+.content{
+  display: grid;
+  grid-template:
+  'moviedes'50vh
+  'comments'20vh/
+  100%;
+  justify-content: center;
+}
+.movieds{
+  grid-area: moviedes;
+
+}
+.comments{
+  grid-area: comments;
+
+}
+.content p {
+  color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+}
+
+.movie1{
+  grid-area: m1;
+  background: blue;
+}
+.movie2{
+  grid-area: m2;
+  background: blueviolet;
+}
+.movie3{
+  grid-area: m3;
+  background: brown;
+}
+.movie4{
+  grid-area: m4;
+  background: rgb(106, 78, 35);
+}
